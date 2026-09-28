@@ -1,56 +1,31 @@
-# Animation Samples
-Sample apps that showcase Flutter's animation features
+# Flutter Animation Showcase
 
-## Goals
+A live catalog of Flutter animations for designers: open any example, tweak
+duration, curves and effect strength, and copy the spec for the developers.
 
-- Demonstrate the building blocks for animations and how they work together.
-- Provide samples for common patterns and use-cases.
+**Open it:** https://gameramapp.github.io/animation-showcase/
+(add `?lang=ru`, `de`, `fr` or `es` to switch the language)
 
-## Samples
+## What's inside
 
-### Basics
+Implicit and explicit animations, choreography, screen transitions,
+micro-interactions, scroll effects, Canvas drawing, animation packages
+(flutter_animate, animations, …), Lottie and Rive, and a "from designer to
+code" section: curves as `cubic-bezier` / spring, keyframes and matrices from
+config.
 
-Building blocks and patterns
+Every screen has knobs, a **Spec** button with the current values, and a
+"What we need from the designer" block.
 
-1. **AnimatedContainerDemo**: Demonstrates how to use `AnimatedContainer`.
-2. **PageRouteBuilderDemo**: Demonstrates how to use `Tween` and `Animation` to
-   build a custom page route transition.
-3. **AnimationControllerDemo**: Demonstrates how to use an
-   `AnimationController`.
-4. **TweenDemo**: Demonstrates how to use a `Tween` with an
-   `AnimationController`.
-5. **AnimatedBuilderDemo**: Demonstrates how to use an `AnimatedBuilder` with an
-   `AnimationController`.
-6. **CustomTweenDemo**: Demonstrates how to extend `Tween`.
-7. **TweenSequenceDemo**: Demonstrates how to use `TweenSequence` to build a
-   button that changes between different colors.
-8. **FadeTransitionDemo**: Demonstrates how to use `FadeTransition`.
+## Development
 
-### Misc
+```sh
+flutter run -d chrome   # local run
+flutter analyze
+flutter test            # opens every screen in every language
+```
 
-Other uses-cases and examples
+Every push to `main` builds the web app and deploys it to GitHub Pages
+(`.github/workflows/deploy.yml`).
 
-- **RepeatingAnimationDemo**: Demonstrates how to repeat an animation.
-- **ExpandCardDemo**: Demonstrates how to use `AnimatedCrossFade` to fade
-  between two widgets and change the size.
-- **CarouselDemo**: Demonstrates how to use `PageView` with a custom animation.
-- **FocusImageDemo**: Demonstrates how to measure the size of a widget and
-  expand it using a `PageRouteBuilder`.
-- **PhysicsCardDragDemo**: Demonstrates how to run an AnimationController with a
-  spring simulation.
-- **CardSwipeDemo**: A swipeable card that demonstrates how to use gesture
-  detection to drive an animation.
-- **AnimatedList**: Demonstrates how to use `AnimatedList`.
-- **AnimatedPositionedDemo**: Demonstrates how to use `AnimatedPositioned`.
-- **AnimatedSwitcherDemo**: Demonstrates how to use `AnimatedSwitcher`.
-- **HeroAnimationDemo**: Demonstrates how to use `Hero` animation.
-- **CurvedAnimationDemo**: Demonstrates how to use different curves in
-  `CurvedAnimation`.
-
-## Other Resources
-
-- [Introduction to animations](https://flutter.dev/docs/development/ui/animations)
-- [Animation widgets](https://flutter.dev/docs/development/ui/widgets/animation)
-- [Flutter cookbook - Animations](https://flutter.dev/docs/cookbook/animation)
-- [Animations tutorial](https://flutter.dev/docs/development/ui/animations/tutorial)
-- [Implicit animation codelab](https://flutter.dev/docs/codelabs/implicit-animations)
+Adding a showcase, i18n rules and project conventions: see [CLAUDE.md](CLAUDE.md).
